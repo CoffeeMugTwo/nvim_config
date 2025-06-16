@@ -21,5 +21,4 @@ require('lazy').setup({
     require "plugins.telescope",
     require "plugins.lsp",
     require "plugins.autocompletion",
-    require "lua.plugins.autoformatting",
 })
