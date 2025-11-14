@@ -1,5 +1,6 @@
 require("core.options")
 require("core.keymaps")
+require("core.highlight_active_window")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
