@@ -1,6 +1,8 @@
 require("core.options")
 require("core.keymaps")
 require("core.highlight_active_window")
+require("core.show_colorcolumns")
+require("core.custom_syntax_colors")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -24,4 +26,5 @@ require("lazy").setup({
 	require("plugins.autocompletion"),
 	require("plugins.intend-blankline"),
 	require("plugins.none-ls"),
+	require("plugins.conform"),
 })
